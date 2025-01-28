@@ -22,6 +22,9 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 
+    // web
+    implementation("org.springframework.boot:spring-boot-starter-web")
+
     // logging
     implementation("io.github.microutils:kotlin-logging:2.0.11")
 

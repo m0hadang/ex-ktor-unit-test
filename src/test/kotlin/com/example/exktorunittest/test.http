@@ -1,0 +1,36 @@
+@domain =http://localhost:8080
+
+### get(static argument)
+GET {{domain}}/article/all
+Content-Type: application/json
+
+### get(dynamic argument)
+GET {{domain}}/article/2
+Content-Type: application/json
+
+### get(filter)
+GET {{domain}}/article/all?title=1
+Content-Type: application/json
+
+### post
+POST {{domain}}/article
+Content-Type: application/json
+
+{
+  "title": "test 1",
+  "body": "description 1",
+  "authorId": 1234
+}
+
+### put
+PUT {{domain}}/article/1
+Content-Type: application/json
+
+{
+  "title": "update title",
+  "body": "update body"
+}
+
+### delete
+DELETE {{domain}}/article/1
+Content-Type: application/json
